@@ -9,6 +9,8 @@ type Props = {
   setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 };
 
+// comment for checking purpose
+
 const SingleList: React.FC<Props> = ({ todo, todos, setTodos }) => {
   const [edit, setEdit] = useState<boolean>(false);
   const [value, setValue] = useState<string>(todo.todo);
